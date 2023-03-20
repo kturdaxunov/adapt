@@ -1,0 +1,115 @@
+/* Очень маленькие устройства (телефоны, 768px и ниже) */
+@media only screen and (max-width: 768px) {...}
+
+/* Очень маленькие устройства (телефоны, 768px и выше) */
+@media only screen and (min-width: 768px) {...}
+
+/* Большие устройства (ноутбуки / настольные компьютеры, 992px и выше) */
+@media only screen and (min-width: 992px) {...}
+
+/*--------------*/
+
+@media (max-width: 767px) {
+  /* стили для xs-устройств */
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* стили для sm-устройств */
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  /* стили для md-устройств */
+}
+@media (min-width: 1200px) {
+  /* стили для lg-устройств */
+}
+
+/*---------------*/
+
+@media screen and (max-width: 768px) {
+	.row {
+		flex-direction: column; 
+	}
+	.block {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.block2 {
+		max-width: 100%;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	.row {
+		flex-direction: column; 
+	}
+	.block {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.block2 {
+		max-width: 49%;
+	}
+
+	.row2 {
+	justify-content: space-around;
+}
+
+}
+@media screen and (min-width: 992px) {
+	.row {
+		flex-direction: row; 
+		justify-content: space-between;
+	}
+	.block {
+		width: 49%;
+	}
+
+	.block2 {
+		max-width: 24%;
+	}
+
+}
+
+#wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	margin-bottom: 20px;
+}
+.block {
+	box-sizing: border-box;
+	display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+.block img {
+	width: 100%;
+}
+
+/*---------*/
+
+.block2 {
+	box-sizing: border-box;
+	background: green;
+	margin-bottom: 10px;
+	color: white;
+	padding: 10px;
+}
+
+.block2 img {
+	width: 100%;
+}
+
+.row2 {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row; 
+	justify-content: space-between;
+}
+p {
+	text-align: justify;
+}
